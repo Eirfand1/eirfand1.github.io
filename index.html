@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>stress generator</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script>
+	   const input = document.getElementById("namaInput");
+		 const label = input.nextElementSibling;
+
+		 input.addEventListener("input", function () {
+			 if (input.value) {
+				 label.style.transform = "translateY(-100%)";
+			 } else {
+				 label.style.transform = "none";
+			 }
+		 });
+
+		</script>
+	</head>
+	<body>
+		<div id="nama">
+			<input type="text" id="namaInput" class="form-input">
+			<label for="inputku" class="input-label">Nama</label>
+		</div>
+		<div id="template">
+			<h3>Templates</h3>
+			<div id="tombol">
+				<button>Wangy</button>
+				<button>Crot</button>
+				<button>Simp</button>
+				<button>Isep</button>
+				<button>Impregnan</button>
+				<button>Jilat</button>
+				<button>Hina</button>
+				<button>Nikah</button>
+				<button>Agen</button>
+				<button>Breed</button>
+				<button>Plap</button>
+				<button>Simp (english)</button>
+			</div>
+		</div>
+		<div id="hasil">
+			<p>Input name<p>
+		</div>
+	</body>
+</html>
+
+
+
+
+
+
+
+

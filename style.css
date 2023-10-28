@@ -1,0 +1,116 @@
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Press+Start+2P&family=Roboto:wght@300;400&display=swap');
+
+* {
+		font-family: Roboto;
+		box-sizing: border-box;
+		scroll-behavior: smooth;
+		background-color: #11111b;
+	}
+
+@media screen and (max-width: 1200px){
+	body {
+		width: 100%;
+		font-size: 4vw;
+	}
+	#template #tombol button {
+		font-size: 40px;
+	}
+	#hasil {
+		margin-top: 12vh;
+	}
+}
+
+body {
+	margin-top: 100px;
+}
+
+#nama {
+	position: relative;
+	margin: 1px;
+}
+
+.form-input {
+	color: #9399b2;
+	font-weight: 500;
+	border: none;
+	border-bottom: 1px dotted;
+	font-size: 1em;
+}
+
+.form-input:focus{
+	outline: none;
+}
+
+.input-label {
+	color: #9399b2;
+	font-weight: bolder;
+	position: absolute;
+	left: 5px;
+	top: -6px;
+  transition:transform .15s ease;
+	pointer-events: none;
+}
+
+.form-input:focus + .input-label {
+  transform:translateY(-100%)
+}
+
+#template {
+	display: flex;
+	flex-direction: column;
+}
+
+#template #tombol {
+	display: flex;
+	justify-content: flex-start;
+	gap: 1em;
+	padding-left: 15px;
+	padding-top: 5px;
+	flex-wrap: wrap;
+	height: 38px;
+}
+
+#template #tombol button {
+	border: none;
+	color: #cdd6f4;
+	position: relative;
+	outline: none;
+	padding: 5px;
+	overflow: hidden;
+}
+
+#template #tombol button:hover {
+	color: white;
+	transition: all 300ms ease;
+}
+#template #tombol button:hover:after{
+	right: 0;
+}
+
+#template #tombol button:after {
+	content: "";
+	right: 100%;
+	transition: all 300ms ease;
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	bottom: 1px;
+	background-color: #f5c2e7;
+}
+
+#hasil {
+	color: #9399b2;
+	font-weight: bolder;
+	display: flex;
+}
+
+#template h3 {
+	color: #9399b2;
+	display: inline;
+	font-weight: bolder;
+	padding-bottom: 0;
+}
+
+
+
+

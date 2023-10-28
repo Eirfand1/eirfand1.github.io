@@ -88,12 +88,12 @@ input:focus + .input-label {
 }
 
 
-#template #tombol button.clicked {
-	color: blue;
+#template #tombol button:focus {
+	color: #f5e0dc;
 }
 
 #template #tombol button:hover {
-	color: white;
+	color: #f5e0dc;
 	transition: all 300ms ease;
 }
 

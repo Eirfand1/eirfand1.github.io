@@ -7,6 +7,12 @@
 		background-color: #11111b;
 	}
 
+@media screen and (max-width: 480px){
+	#hasil {
+		top: 20px;
+	}
+}
+
 @media screen and (max-width: 1024px){
 	body {
 		width: 100%;
@@ -39,9 +45,6 @@ body {
 	border: none;
 	border-bottom: 1px dotted;
 	font-size: 1em;
-}
-
-.form-input:focus{
 	outline: none;
 }
 
@@ -55,8 +58,8 @@ body {
 	pointer-events: none;
 }
 
-.form-input:focus + .input-label {
-  transform:translateY(-100%)
+input:focus + .input-label {
+  transform: translateY(-100%);
 }
 
 #template {
@@ -81,12 +84,19 @@ body {
 	outline: none;
 	padding: 5px;
 	overflow: hidden;
+	cursor: pointer;
+}
+
+
+#template #tombol button.clicked {
+	color: blue;
 }
 
 #template #tombol button:hover {
 	color: white;
 	transition: all 300ms ease;
 }
+
 #template #tombol button:hover:after{
 	right: 0;
 }
@@ -106,6 +116,8 @@ body {
 	color: #9399b2;
 	font-weight: bolder;
 	display: flex;
+	position: relative;
+	flex-direction: column;
 }
 
 #template h3 {

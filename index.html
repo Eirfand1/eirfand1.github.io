@@ -3,44 +3,52 @@
 	<head>
 		<title>stress generator</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<!--<script>
-	   const input = document.getElementById("namaInput");
-		 const label = input.nextElementSibling;
+<!--		<script>
+			const input = document.getElementById("namaInput");
+			const label = input.nextElementSibling;
 
-		 input.addEventListener("input", function () {
-			 if (input.value) {
-				 label.style.transform = "translateY(-100%)";
-			 } else {
-				 label.style.transform = "none";
-			 }
-		 }); 
+			input.addEventListener("input", function () {
+				 if (input.value) {
+						 label.style.transform = "translateY(-100%)";
+			    } else {
+					   label.style.transform = "none";
+				 }
+			});
+
+			input.addEventListener("blur", function () {
+				 if (input.value) {
+						 input.blur(); // Menghilangkan fokus dari input
+				 }
+			});
 
 		</script> -->
 	</head>
 	<body>
 		<div id="nama">
-			<input type="text" id="namaInput" class="form-input">
-			<label for="inputku" class="input-label">Nama</label>
+			<input type="text" id="namaInput" class="form-input" maxlength=16 oninput="inputan()">
+			<label id="namaIn" class="input-label">Nama</label>
 		</div>
 		<div id="template">
 			<h3>Templates</h3>
 			<div id="tombol">
-				<button>Wangy</button>
-				<button>Crot</button>
-				<button>Simp</button>
-				<button>Isep</button>
-				<button>Impregnan</button>
-				<button>Jilat</button>
-				<button>Hina</button>
-				<button>Nikah</button>
-				<button>Agen</button>
-				<button>Breed</button>
-				<button>Plap</button>
-				<button>Simp (english)</button>
+				<button id="btn1" onclick="oncBtn1()">Wangy</button>
+				<button id="btn2" onclick="oncBtn2()">Crot</button>
+				<button id="btn3" onclick="oncBtn3()">Simp</button>
+				<button id="btn4" onclick="oncBtn4()">Isep</button>
+				<button id="btn5" onclick="oncBtn5()">Jilat</button>
+				<button id="btn6" onclick="oncBtn6()">Hina</button>
+				<button id="btn7" onclick="oncBtn7()">Nikah</button>
+				<button id="btn8" onclick="oncBtn8()">Agen</button>
+				<button id="btn9" onclick="oncBtn9()">Impregnate</button>
+				<button id="btn10" onclick="oncBtn10()">Simp (English)</button>
+				<button id="btn11" onclick="oncBtn11()">Breed</button>
+				<button id="btn12" onclick="oncBtn12()">Plap</button>		
 			</div>
 		</div>
 		<div id="hasil">
-			<p>Input name<p>
+			<h3>Hasil</h3>
+			<div id="hasilWaifu"></div>
+			<script src="backend.js"></script>
 		</div>
 	</body>
 </html>

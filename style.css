@@ -7,21 +7,25 @@
 		background-color: #11111b;
 	}
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1024px){
 	body {
 		width: 100%;
+		height: 100%;
 		font-size: 4vw;
 	}
 	#template #tombol button {
 		font-size: 40px;
 	}
 	#hasil {
-		margin-top: 12vh;
+		margin-top: 7em;
 	}
 }
 
 body {
 	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
 }
 
 #nama {

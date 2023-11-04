@@ -12,6 +12,7 @@ var btn11 = document.getElementById('btn11');
 var btn12 = document.getElementById('btn12');
 var currentBotton = 1;
 
+
 function inputan() {
     return document.getElementById('namaInput').value.toUpperCase();
 }

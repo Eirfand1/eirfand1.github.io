@@ -58,6 +58,7 @@ body {
 	pointer-events: none;
 }
 
+input:valid + .input-label,
 input:focus + .input-label {
   transform: translateY(-100%);
 }
